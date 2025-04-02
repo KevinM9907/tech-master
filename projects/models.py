@@ -6,4 +6,4 @@ class Project(models.Model):
     description = models.TextField()
     technology = models.CharField(max_length=200)
     created_at = models.DateTimeField(auto_now_add=True)
-    texto = models.CharField(max_length=200)
+    autor = models.CharField(null=True,max_length=300)
